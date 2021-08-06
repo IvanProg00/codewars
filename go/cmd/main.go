@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	katas.RunKata7()
+	katas.RunKata6()
 }
