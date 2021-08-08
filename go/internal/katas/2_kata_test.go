@@ -7,39 +7,39 @@ import (
 
 func TestIsPrimeNumber(t *testing.T) {
 	type StructTest struct {
-		value    int
-		expected bool
+		Value    int
+		Expected bool
 	}
 
 	tests := []StructTest{
 		{
-			value:    5,
-			expected: true,
+			Value:    5,
+			Expected: true,
 		},
 		{
-			value:    150,
-			expected: false,
+			Value:    150,
+			Expected: false,
 		},
 		{
-			value:    385,
-			expected: false,
+			Value:    385,
+			Expected: false,
 		},
 		{
-			value:    401,
-			expected: true,
+			Value:    401,
+			Expected: true,
 		},
 		{
-			value:    577,
-			expected: true,
+			Value:    577,
+			Expected: true,
 		},
 	}
 
 	for _, test := range tests {
-		if katas.IsPrimeNumber(test.value) != test.expected {
-			if test.expected {
-				t.Errorf("%d is not a primitive number", test.value)
+		if katas.IsPrimeNumber(test.Value) != test.Expected {
+			if test.Expected {
+				t.Errorf("%d is not a primitive number", test.Value)
 			} else {
-				t.Errorf("%d is a primitive number", test.value)
+				t.Errorf("%d is a primitive number", test.Value)
 			}
 		}
 	}

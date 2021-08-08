@@ -7,24 +7,24 @@ import (
 
 func TestDNAStrand(t *testing.T) {
 	type StructTest struct {
-		value    string
-		expected string
+		Value    string
+		Expected string
 	}
 
 	tests := []StructTest{
 		{
-			value:    "ATTGC",
-			expected: "TAACG",
+			Value:    "ATTGC",
+			Expected: "TAACG",
 		}, {
-			value:    "GTAT",
-			expected: "CATA",
+			Value:    "GTAT",
+			Expected: "CATA",
 		},
 	}
 
 	for _, test := range tests {
-		res := katas.DNAStrand(test.value)
-		if res != test.expected {
-			t.Errorf("%s is not equals to %s", res, test.expected)
+		res := katas.DNAStrand(test.Value)
+		if res != test.Expected {
+			t.Errorf("%s is not equals to %s", res, test.Expected)
 		}
 	}
 }

@@ -7,27 +7,27 @@ import (
 
 func TestLongestConsec(t *testing.T) {
 	type ValueStruct struct {
-		strarr []string
-		k      int
+		Strarr []string
+		K      int
 	}
 	type StructTest struct {
-		value    ValueStruct
-		expected string
+		Value    ValueStruct
+		Expected string
 	}
 	tests := []StructTest{
 		{
-			value: ValueStruct{
-				strarr: []string{"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"},
-				k:      1,
+			Value: ValueStruct{
+				Strarr: []string{"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"},
+				K:      1,
 			},
-			expected: "oocccffuucccjjjkkkjyyyeehh",
+			Expected: "oocccffuucccjjjkkkjyyyeehh",
 		},
 	}
 
 	for _, test := range tests {
-		res := katas.LongestConsec(test.value.strarr, test.value.k)
-		if res != test.expected {
-			t.Errorf("%s is not equals to %s", res, test.expected)
+		res := katas.LongestConsec(test.Value.Strarr, test.Value.K)
+		if res != test.Expected {
+			t.Errorf("%s is not equals to %s", res, test.Expected)
 		}
 	}
 }
