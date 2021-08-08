@@ -29,7 +29,6 @@ func TestScale(t *testing.T) {
 
 	for _, test := range tests {
 		res := katas.Scale(test.Value.S, test.Value.K, test.Value.N)
-		t.Log(res)
 		if res != test.Expected {
 			t.Errorf("%s is not equals to %s", res, test.Expected)
 		}
