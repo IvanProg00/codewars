@@ -1,15 +1,10 @@
 package katas
 
 import (
-	"fmt"
 	"math"
 )
 
-func RunKata2() {
-	fmt.Println(isPrimeNumber(5))
-}
-
-func isPrimeNumber(num int) bool {
+func IsPrimeNumber(num int) bool {
 	if num <= 3 {
 		return num > 1
 	}
