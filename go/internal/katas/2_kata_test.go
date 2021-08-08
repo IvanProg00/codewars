@@ -5,12 +5,12 @@ import (
 	"testing"
 )
 
-type StructTest struct {
-	value    int
-	expected bool
-}
-
 func TestIsPrimeNumber(t *testing.T) {
+	type StructTest struct {
+		value    int
+		expected bool
+	}
+
 	tests := []StructTest{
 		{
 			value:    5,
@@ -37,9 +37,9 @@ func TestIsPrimeNumber(t *testing.T) {
 	for _, test := range tests {
 		if katas.IsPrimeNumber(test.value) != test.expected {
 			if test.expected {
-				t.Errorf("%d must be a primitive number", test.value)
+				t.Errorf("%d is not a primitive number", test.value)
 			} else {
-				t.Errorf("%d must not be a primitive number", test.value)
+				t.Errorf("%d is a primitive number", test.value)
 			}
 		}
 	}

@@ -1,19 +1,8 @@
 package katas
 
 import (
-	"fmt"
 	"strings"
 )
-
-func RunKata3() {
-	res := LongestConsec([]string{"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"}, 1)
-	expected := "oocccffuucccjjjkkkjyyyeehh"
-	if res == expected {
-		fmt.Printf("%s == %s\n", res, expected)
-	} else {
-		fmt.Printf("%s != %s\n", res, expected)
-	}
-}
 
 func LongestConsec(strarr []string, k int) string {
 	if k > len(strarr) || k <= 0 {
