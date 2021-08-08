@@ -8,11 +8,6 @@ import (
 const PosibleLetters = "abcdefghijklm"
 
 // Printer Errors: https://www.codewars.com/kata/56541980fa08ab47a0000040/train/go
-func RunKata5() {
-	fmt.Println(PrinterError("aaabbbbhaijjjm"))
-	fmt.Println(PrinterError("aaaxbbbbyyhwawiwjjjwwm"))
-}
-
 func PrinterError(s string) string {
 	size := len(s)
 	errors := 0
